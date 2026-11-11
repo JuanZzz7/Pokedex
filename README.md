@@ -1,16 +1,48 @@
-# React + Vite
+# Pokédex Viewer ⚡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto nació como parte de una actividad práctica, donde decidí utilizar **React** (junto con Vite) para poner en práctica y fortalecer conceptos sobre componentes, consumo de APIs y manejo de estados. 
 
-Currently, two official plugins are available:
+Lo dejo por aquí en el repositorio por si a alguien le sirve de referencia, quiere revisar la implementación o le llama la atención el diseño de la interfaz.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ ¿Qué incluye?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Consumo de PokéAPI v2:** Consulta directa a los endpoints de [PokeAPI](https://pokeapi.co/).
+- **Búsqueda flexible:** Puedes consultar cualquier Pokémon tanto por su **nombre** (ej: *charizard*, *gengar*) como por su **número de Pokédex** (ej: *6*, *94*).
+- **Diseño interactivo:**
+  - Ilustración oficial del Pokémon en alta resolución.
+  - Iluminación dinámica de fondo según el tipo elemental del Pokémon.
+  - Resumen de 3 datos clave: tipos, dimensiones físicas (altura/peso) y habilidades.
+  - Botón de selección al azar (🎲) y atajos rápidos a Pokémon populares.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Cómo ejecutarlo localmente
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/JuanZzz7/Pokedex.git
+   cd Pokedex
+   ```
+
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+3. **Iniciar el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+4. Abre en tu navegador la dirección que indique la terminal (usualmente `http://localhost:5173`).
+
+---
+
+## 📦 Tecnologías utilizadas
+
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [PokéAPI v2](https://pokeapi.co/)
+- CSS moderno (Glassmorphism, gradientes dinámicos y Flexbox)
